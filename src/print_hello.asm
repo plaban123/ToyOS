@@ -1,3 +1,4 @@
+;; snippet prints 'Hello' after booting
 mov ah, 0x0e			;scrolling teletype BIOS routine(to print char on screen)
 mov al, 'H'			;start printing 'Hello'
 int 0x10			;execute ISR for printing to screen
